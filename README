@@ -1,0 +1,46 @@
+Implementare Tema_3 PC
+Craciun Alexandru-Andrei
+Grupa 313CD
+
+Fisierele SRC:
+
+1. cJSON.c, cJSON.h
+    librariile cu ajutorul carora reusesc sa transfer informatiile din fisere de tip json in c.
+2. bmp_header.h
+    un fisier unde am declarate strcturile pentru file_header, info_header is pixel.
+3. number_write.h, number_default.h
+    un fisier unde am declarat matriciile de pixel pentru fiecare numar in functie de culoare
+4. sudoku_checker.h
+    o functie care verifica daca un sudoku este rezolvat corect sau nu
+5. sudoku_solver.h
+    o functie care rezolva sudoku si o functie care verifica daca un anumit numar este corect pus sau nu
+6. sudoku_write.h
+    o functie care scrie pe matricea de pixeli numarul primit la input
+7. task_123.c, task_4.c, task_bonus.c
+    fisiere care rezolva taskurile din cerinta
+8. transf_numar.c 
+    functie care tranforma un numar din matricea de pixeli ai sudokului intr-un numar de tip int
+
+Implementare:
+
+1.task_123:
+    -task_1:
+        Fisierul primeste ca input un path catre un fisierul de input si pe baza acelui path el creaza numele pentru output.
+        Cu ajutorul functiiei de json acesta ia informatiile din json si le scrie binar in fisierul de output ca sa creeze poza.
+    -task_2:
+        Acesta ia fiecare patratica in parte si inverseaza pixelii astfel incat ei sa nu mai fie inversati.
+        Scrie binar pixelii noi intr-un alt fisier de output.
+    -task_3:
+        Pe baza functiilor din src acesta transforma sudok-ul din imagine intr-o matrice si verifica daca este rezolvat corect.
+        Acesta scrie intr-un fisier output-ul dorit.
+2.task_4:
+    Acesta citeste binar fisierul de input.
+    Cu ajutorul functiilor din src el transforma sudoku-ul din poza intr-o matrice si o rezolva.
+    Scrie numere corecte in spatiile albe corespunzatoare.
+    Scrie sudoku-ul rezolvat in mod binar intr-un fisier de output.
+3.task_5:
+    Acesta citeste binar fisierul de input.
+    Cu ajutorul functiilor din src el tranforma sudoku-ul din poza intr-o matrice si o rezolva.
+    Daca matricea se poate rezolva atunci scrie numerele corecte in spatiile albe corespunzatoare.
+    In caz contrar populeaza toata poza cu "X".
+    Scrie noul sudoku in mod binar intr-un fisier de output.
